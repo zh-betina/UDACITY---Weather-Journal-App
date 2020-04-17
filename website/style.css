@@ -1,0 +1,44 @@
+html {
+
+  background-color: white;
+}
+
+h1 {
+
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 1.5em;
+  margin-top: 2em;
+}
+
+.wrapper {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 3em;
+}
+
+#generate-form {
+
+  height: 80vh;
+  width: 40vw;
+  background-color: yellow;
+  border-radius: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#entryHolder {
+
+  height: 80vh;
+  width: 40vw;
+  background-color: yellow;
+  border-radius: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:
+
+}
