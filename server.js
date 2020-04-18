@@ -22,13 +22,15 @@ app.get('/', (req, res)=>{
   res.sendFile(`./website/index.html`);
 });
 
+app.get('/entries', (req,res)=>{
 
+  res.send(projectData);
+  console.log(`New entries sent to the UI: ${projectData}`);
+});
 
 /*POST Routes*/
 
 let projectData = [];
-
-
 
 app.post('/add', addEntry);
 
@@ -43,10 +45,3 @@ function addEntry(req, res){
   console.log(`New entries added on the server side: ${projectData}`);
   res.send(projectData);
 };
-
-
-app.get('/entries', (req,res)=>{
-
-  res.send(projectData);
-  console.log(`New entries sent to the UI: ${projectData}`);
-});
