@@ -13,7 +13,7 @@ app.use(cors());
 
 app.use(express.static('./website'));
 
-app.listen(process.env.PORT, ()=>{console.log(`Running`)});
+app.listen(8000, ()=>{console.log(`Running`)});
 
 /*GET Routes*/
 
