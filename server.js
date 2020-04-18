@@ -13,11 +13,9 @@ app.use(cors());
 
 app.use(express.static('./website'));
 
-//Listening to port 8000 and Heroku chosen port
-app.listen(8000 || process.env.PORT, ()=>{console.log(`Running`)});
+app.listen(process.env.PORT, ()=>{console.log(`Running`)});
 
 /*GET Routes*/
-
 
 app.get('/', (req, res)=>{
 
