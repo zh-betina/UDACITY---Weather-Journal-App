@@ -11,7 +11,7 @@ let url = `${baseUrl}zip=${zip},${place}${apiKey}${units}`;
 
 // Create a new date instance dynamically with JS
 const date = new Date();
-const newDate = `${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`;
+const newDate = `${date.getDate()}/${date.getMonth()+1}/${date.getFullYear()}`;
 
 
 //'Generate' event listener
