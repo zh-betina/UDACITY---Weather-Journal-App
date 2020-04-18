@@ -150,7 +150,7 @@ button:hover {
 
     background-image: url(./weatherBgrVert.jpg);
     background-repeat: no-repeat;
-    background-size: fill;
+    background-size: cover;
     margin: 0;
   }
   .wrapper {
@@ -199,5 +199,4 @@ button:hover {
     margin: 2em;
     width: 80vw;
   }
-
 }
