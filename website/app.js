@@ -4,7 +4,7 @@ let place = document.getElementById('country').value;
 let feel = document.getElementById('feelings').value;
 
 /*API credentials*/
-const baseUrl = "https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?";
+const baseUrl = "http://api.openweathermap.org/data/2.5/weather?";
 const apiKey = '&appid=51a1e583a80570b3b8cd3b2021b86cac';
 const units = '&units=metric'
 let url = `${baseUrl}zip=${zip},${place}${apiKey}${units}`;
