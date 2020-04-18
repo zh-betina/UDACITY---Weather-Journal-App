@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 const cors = require('cors');
 app.use(cors());
 
-app.use(express.static('website'));
+app.use(express.static('./website'));
 
 let port = 8000;
 app.listen(port || process.env.PORT, ()=>{console.log(`Running on localhost: ${port}`)});

@@ -2,7 +2,7 @@
 
 html {
 
-  background-image: url(weatherBgr.jpg);
+  background-image: url(./weatherBgr.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin: auto;
@@ -148,7 +148,7 @@ button:hover {
 
   html {
 
-    background-image: url(weatherBgrVert.jpg);
+    background-image: url(./weatherBgrVert.jpg);
     background-repeat: no-repeat;
     background-size: fill;
     margin: 0;
