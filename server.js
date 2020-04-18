@@ -13,14 +13,14 @@ app.use(cors());
 
 app.use(express.static('./website'));
 
-app.listen(8000 || process.env.PORT, ()=>{console.log(`Running on localhost: ${port}`)});
+app.listen(process.env.PORT, ()=>{console.log(`Running`)});
 
 /*GET Routes*/
 
 
 app.get('/', (req, res)=>{
 
-  res.sendFile(`${__dirname}/index.html`);
+  res.sendFile(`./website/index.html`);
 });
 
 
