@@ -18,28 +18,37 @@ app.listen(port, ()=>{console.log(`Running on localhost: ${port}`)});
 
 /*GET Routes*/
 
-app.get('/', function(req, res){
+
+app.get('/', (req, res)=>{
 
   res.sendFile(`${__dirname}/index.html`);
 });
 
-app.get('/entries', function(req,res){
 
-  res.send(entries);
-  console.log(entries);
-});
 
 /*POST Routes*/
 
-const entries = [];
+let projectData = [];
+
+
 
 app.post('/add', addEntry);
 
 function addEntry(req, res){
-  newEntry = {
-    "base": req.body.base
+  let newEntry = {
+    "temperature": req.body.temperature,
+    "feelings": req.body.feelings,
+    "date": req.body.date
   };
 
-  entries.push(newEntry);
-  console.log(entries);
+  projectData.unshift(newEntry);
+  console.log(`New entries added on the server side: ${projectData}`);
+  res.send(projectData);
 };
+
+
+app.get('/entries', (req,res)=>{
+
+  res.send(projectData);
+  console.log(`New entries sent to the UI: ${projectData}`);
+});
