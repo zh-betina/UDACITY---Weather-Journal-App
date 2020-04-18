@@ -13,8 +13,8 @@ app.use(cors());
 
 app.use(express.static('website'));
 
-const port = 8000;
-app.listen(port, ()=>{console.log(`Running on localhost: ${port}`)});
+let port = 8000;
+app.listen(port || process.env.PORT, ()=>{console.log(`Running on localhost: ${port}`)});
 
 /*GET Routes*/
 
