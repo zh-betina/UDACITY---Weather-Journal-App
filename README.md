@@ -18,6 +18,7 @@ for visual purposes and gets replaced once the user generates his/her own entry.
 
 - Postman (https://www.postman.com/);
 - CORS entry from MDN (https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS);
+- Error codes explained by MDN: (https://developer.mozilla.org/en-US/docs/Web/HTTP/Status).
 
 
 #### Important remarks on CORS:
@@ -25,7 +26,7 @@ for visual purposes and gets replaced once the user generates his/her own entry.
 To bypass CORS rules while developing locally, **CORS Everywhere** addon for Firefox  was used:  
 - https://github.com/spenibus/cors-everywhere-firefox-addon @spenibus
 
-For Heroku deployment, *cors-anywhere* was applied:
+For Heroku deployment, **cors-anywhere** was applied:
 - https://github.com/Rob--W/cors-anywhere @Rob--W
 
 ## Files:
