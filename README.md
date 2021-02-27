@@ -1,8 +1,12 @@
-# UDACITY---Weather-Journal-App
-### Available live deployment here: https://secret-harbor-17931.herokuapp.com/
+# Weather-Journal-App
+**PLEASE, NOTE: at the time I developed this app, I used a cors-anywhere solution which is not working properly anymore.<br>
+Therefore, the GET request to the external API isn't working properly. It's going to be fixed.
+I'm sorry for the inconvenience.**
+
+Go to see the [Live Preview](https://secret-harbor-17931.herokuapp.com/)<br>
+Used: Node.js, Express.js, JavaScript, HTML, npm, API REST communication, heroku.
+
 ## About project:
-
-
 Weather Journal App project for **Front End Developer Nanodegree** program of **Udacity**. 
 The main focus put on:
 * setting up local server using **Node.js** and **Express.js**,
